@@ -4,6 +4,7 @@
             <div class="col-5 m-2 text-center">
                 <img class="rounded-3 mb-1 hidden-mobile"
                      src="../assets/img/marko-andonov-slika.jpg"
+                     alt="marko-andonov-image"
                      style=" width: 70%; height: 80%">
                 <h4 class="name-position-center">Marko Andonov</h4>
                 <h6 class="hidden-mobile" style="width: 40%; margin: auto">Software engineer and web developer</h6>
