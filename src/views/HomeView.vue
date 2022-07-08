@@ -16,17 +16,24 @@
         <hr/>
       </div>
 
-      <div class="text-center pb-3">
-        <h4>If you could give me a thumbs up for my CV I would be grateful:</h4>
-        <div class="d-flex flex-row justify-content-between w-25 m-auto mt-4 mb-4">
-          <button @click="likesClick" class="badge rounded-pill text-primary fa-2x"><i class="fa fa-thumbs-up fa-3x" aria-hidden="true"></i></button>
-          <button @click="dislikesClicks" class="badge rounded-pill text-danger fa-2x"><i class="fa fa-thumbs-down fa-3x" aria-hidden="true"></i></button>
+
+      <div id="buttonRate" class="row">
+        <div class="d-flex flex-row justify-content-center mt-4 mb-4">
+          <button @click="showRateForm" class="btn btn-outline-dark fa-2x">Rate this CV</button>
         </div>
 
-        <p  class="text-white p-4 bg-black m-auto" style="width: 20%" >{{showAverageFromLikesAndDislikes}} people like this CV.</p>
       </div>
 
-
+      <div id="showDiv" class="pb-3" style="display: none">
+        <h4 class="text-center ms-md-5">If you could give me a thumbs up for my CV I would be grateful:</h4>
+        <div class="d-flex flex-row justify-content-center mt-4 mb-4">
+          <button @click="likesClick" class="badge rounded-pill text-primary fa-2x"><i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i></button>
+          <button @click="dislikesClicks" class="badge rounded-pill text-danger fa-2x"><i class="fa fa-thumbs-down fa-2x" aria-hidden="true"></i></button>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="text-white p-4 col-10 col-md-6 col-lg-4 text-center bg-black" >{{showAverageFromLikesAndDislikes}} people like this CV.</div>
+        </div>
+       </div>
     </div>
   </main>
 
@@ -57,6 +64,13 @@ export default {
     },
     dislikesClicks(){
       this.clicksCounter++;
+    },
+    showRateForm(){
+      let buttonRate = document.getElementById("buttonRate");
+      buttonRate.style.display = "none";
+
+      let formRate = document.getElementById("showDiv")
+      formRate.style.display = "block";
     }
   },
   computed: {

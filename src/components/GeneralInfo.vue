@@ -1,16 +1,15 @@
 <template>
     <section>
         <div class="row">
-            <div class="col-5 m-2 text-center">
-                <img class="rounded-3 mb-1 hidden-mobile"
+            <div class="col-md-5 col-xs-12 m-2 d-flex flex-column align-items-center">
+                <img class="rounded-3 mb-1 w-75 h-100"
                      src="../assets/img/marko-andonov-slika.jpg"
-                     alt="marko-andonov-image"
-                     style=" width: 70%; height: 80%">
-                <h4 class="name-position-center">Marko Andonov</h4>
-                <h6 class="hidden-mobile" style="width: 40%; margin: auto">Software engineer and web developer</h6>
+                     alt="marko-andonov-image">
+                <h4 >Marko Andonov</h4>
+                <h6 class="w-50 text-center" >Software engineer and web developer</h6>
 
             </div>
-            <div class="col-5 d-flex justify-content-end mt-5">
+            <div class="col-md-5 col-xs-12 d-flex justify-content-end mt-5">
                 <div class="text-end">
                     <h4><i class="fa fa-id-card" aria-hidden="true"></i>  Contact Info:</h4>
                     <h6><i class="fa fa-home" aria-hidden="true"></i>  Lives in: Skopje, Macedonia</h6>
@@ -36,12 +35,5 @@
 </script>
 
 <style scoped>
-    @media (max-width: 760px) {
-        .hidden-mobile {
-            display: none;
-        }
-        .name-position-center{
-            margin-top: 50px;
-        }
-    }
+
 </style>
