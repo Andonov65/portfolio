@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-secondary bg-opacity-25">
+  <main class="bg-secondary bg-opacity-25 w-100">
     <div class="container pt-4">
 
 
@@ -56,6 +56,7 @@ export default {
       return this.likes++;
     },
     dislikesClicks(){
+      this.clicksCounter++;
       return this.likes--;
     }
   },
