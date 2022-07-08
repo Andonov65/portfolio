@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-secondary bg-opacity-25 w-100">
+  <main style="overflow-x: hidden" class="bg-secondary bg-opacity-25 w-100 h-100">
     <div class="container pt-4">
 
 
@@ -53,11 +53,10 @@ export default {
   methods: {
     likesClick(){
       this.clicksCounter++;
-      return this.likes++;
+      this.likes++;
     },
     dislikesClicks(){
       this.clicksCounter++;
-      return this.likes--;
     }
   },
   computed: {
@@ -65,9 +64,7 @@ export default {
       if(isNaN(parseFloat((this.likes/this.clicksCounter)*100))){
         return "0%";
       }
-      if(parseFloat((this.likes/this.clicksCounter)*100)<=-100){
-        return "-100%";
-      }
+
       return parseFloat((this.likes/this.clicksCounter)*100).toFixed(0)+"%";
     }
   }
