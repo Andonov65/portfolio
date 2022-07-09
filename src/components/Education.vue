@@ -11,7 +11,7 @@
                 </div>
             </div>
 
-            <div id="hideDivEdu" class="ms-md-5 mt-3 p-3 bg-danger bg-opacity-50 rounded-3" style="display: none">
+            <div id="hideDivEdu" class="ms-md-5 mt-3 p-3 bg-success bg-opacity-50 rounded-3" style="display: none">
                 <p >
                     <i class="fa fa-circle" aria-hidden="true"></i>  <b>2019 - </b>in progress | Faculty of Computer Science and Engineering on UKIM - Skopje
                 </p>
