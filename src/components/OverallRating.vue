@@ -13,16 +13,16 @@
 
                 <div id="hideDivOtherSkill" class="ms-md-5 mt-3 h-25"  style="display: none" >
                     <ul class="row list-unstyled fs-5 col-11 col-md-5"  >
-                        <li class="col-12"><i class="fa fa-check-circle-o" aria-hidden="true"></i>  Time management</li>
-                        <li class="col-12"><i class="fa fa-check-circle-o" aria-hidden="true"></i>  Communication</li>
-                        <li class="col-12"><i class="fa fa-check-circle-o" aria-hidden="true"></i>  Adaptability</li>
-                        <li class="col-12"><i class="fa fa-check-circle-o" aria-hidden="true"></i>  Problem-solving</li>
-                        <li class="col-12"><i class="fa fa-check-circle-o" aria-hidden="true"></i>  Teamwork</li>
-                        <li class="col-12"><i class="fa fa-check-circle-o" aria-hidden="true"></i>  Creativity</li>
-                        <li class="col-12"><i class="fa fa-check-circle-o" aria-hidden="true"></i>  Patience</li>
-                        <li class="col-12"><i class="fa fa-check-circle-o" aria-hidden="true"></i>  Flexibility</li>
-                        <li class="col-12"><i class="fa fa-check-circle-o" aria-hidden="true"></i>  Attention to detail</li>
-                        <li class="col-12"><i class="fa fa-check-circle-o" aria-hidden="true"></i>  Work ethic</li>
+                        <li class="col-12"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>  Time management</li>
+                        <li class="col-12"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>  Communication</li>
+                        <li class="col-12"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>  Adaptability</li>
+                        <li class="col-12"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>  Problem-solving</li>
+                        <li class="col-12"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>  Teamwork</li>
+                        <li class="col-12"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>  Creativity</li>
+                        <li class="col-12"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>  Patience</li>
+                        <li class="col-12"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>  Flexibility</li>
+                        <li class="col-12"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>  Attention to detail</li>
+                        <li class="col-12"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>  Work ethic</li>
                     </ul>
                     <div class="row d-flex flex-row justify-content-center">
                         <div class="col">
