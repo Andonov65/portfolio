@@ -16,6 +16,16 @@
         <hr/>
       </div>
 
+      <div class="row">
+        <div class="col rounded-start bg-success p-1"></div>
+        <div class="col bg-warning bg-opacity-50"></div>
+        <div class="col bg-warning"></div>
+        <div class="col bg-danger"></div>
+        <div class="col bg-danger bg-opacity-50"></div>
+        <div class="col bg-info bg-opacity-50"></div>
+        <div class="col bg-primary"></div>
+        <div class="col rounded-end bg-info"></div>
+      </div>
 
       <div id="buttonRate" class="row">
         <div class="d-flex flex-row justify-content-center mt-4 mb-4">

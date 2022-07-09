@@ -1,6 +1,7 @@
 <template>
     <section>
         <div class="row">
+
             <div class="col-md-5 col-xs-12 m-2 d-flex flex-column align-items-center">
                 <img class="rounded-3 mb-1 w-75 h-100"
                      src="../assets/img/marko-andonov-slika.jpg"
@@ -9,6 +10,7 @@
                 <h6 class="w-50 text-center" >Software engineer and web developer</h6>
 
             </div>
+
             <div class="col-md-5 col-xs-12 d-flex justify-content-end mt-5">
                 <div class="text-end">
                     <h4><i class="fa fa-id-card" aria-hidden="true"></i>  Contact Info:</h4>
