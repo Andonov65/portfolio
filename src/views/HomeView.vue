@@ -3,17 +3,23 @@
     <div class="container pt-4">
 
 
-      <div>
+      <div class="row">
         <general-info/>
         <hr/>
-        <education/>
-        <hr/>
-        <experience/>
-        <hr/>
-        <skills/>
-        <hr/>
-        <activities/>
-        <hr/>
+        <div class="col">
+          <education/>
+          <hr/>
+          <experience/>
+          <hr/>
+          <skills/>
+          <hr/>
+          <activities/>
+          <hr/>
+        </div>
+        <div class="col top-50">
+          <overall-rating/>
+        </div>
+
       </div>
 
       <div class="row">
@@ -58,9 +64,10 @@ import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Activities from "@/components/Activities";
+import OverallRating from "@/components/OverallRating";
 export default {
   name: 'Home',
-  components: {Activities, Skills, Experience, Education, GeneralInfo},
+  components: {OverallRating, Activities, Skills, Experience, Education, GeneralInfo},
   data(){
     return{
       likes: 0,
