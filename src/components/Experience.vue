@@ -12,7 +12,7 @@
             </div>
 
 
-            <div id="hideDivExp" class="ms-md-5 mt-3"  style="display: none">
+            <div id="hideDivExp" class="ms-md-5 mt-3  p-3 bg-light bg-opacity-25 rounded-3"  style="display: none">
                 <p >
                     <i class="fa fa-circle" aria-hidden="true"></i>  <b>IT support</b> - Local Elections | 17 and 31 October 2021
                 </p>

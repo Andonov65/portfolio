@@ -11,7 +11,7 @@
                     </div>
                 </div>
 
-                <div id="hideDivOtherSkill" class="ms-md-5 mt-3 h-25"  style="display: none" >
+                <div id="hideDivOtherSkill" class="ms-md-5 mt-3  p-3 bg-primary bg-opacity-25 rounded-3"  style="display: none" >
                     <ul class="row list-unstyled fs-5 col-12 col-lg-8"  >
                         <li class="col-12"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>  Time management</li>
                         <li class="col-12"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>  Communication</li>

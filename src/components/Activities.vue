@@ -11,7 +11,7 @@
                     </div>
                 </div>
 
-                <div id="hideDivActivity" class="ms-md-5 mt-3 h-50"  style="display: none">
+                <div id="hideDivActivity" class="ms-md-5 mt-3 p-3 bg-warning bg-opacity-25 rounded-3"  style="display: none">
                     <ul class="list-unstyled fs-5">
                         <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i>  Participated in KONTAKT MK as a member of SP FINKI</li>
                         <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i>  Group project for libraries and reading rooms. The link to the page:

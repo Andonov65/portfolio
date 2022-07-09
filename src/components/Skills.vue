@@ -11,7 +11,7 @@
                     </div>
                 </div>
 
-                <div id="hideDivSkill" class="ms-md-5 mt-3"  style="display: none" >
+                <div id="hideDivSkill" class="ms-md-5 mt-3  p-3 bg-info bg-opacity-25 rounded-3"  style="display: none" >
                     <ul class="row list-unstyled fs-5 col-11 col-md-12"  >
                         <li class="col-12 col-md-4"><i class="fa fa-check-circle-o" aria-hidden="true"></i>  C/C++</li>
                         <li class="col-12 col-md-4"><i class="fa fa-check-circle-o" aria-hidden="true"></i>  JAVA</li>
