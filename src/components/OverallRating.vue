@@ -1,18 +1,18 @@
 <template>
     <section>
-        <div class="row ms-lg-5">
-            <div class="ms-lg-5">
+        <div class="row ms-md-5">
+            <div class="ms-md-5">
                 <div class="row ">
                     <div class="d-flex">
                          <span>
-                            <i @click="myFunction" class="fa fa-chevron-circle-down fa-2x btn btn-outline-dark me-2 mt-3" aria-hidden="true"></i>
+                            <i @click="myFunction" class="fa fa-chevron-circle-down btn btn-outline-dark me-2 mt-1" aria-hidden="true"></i>
                          </span>
-                        <h2><i class="fa fa-bars fa-2x" aria-hidden="true"></i>  Overall Rating and other skills</h2>
+                        <h2><i class="fa fa-bars" aria-hidden="true"></i>  Overall Rating and other skills</h2>
                     </div>
                 </div>
 
                 <div id="hideDivOtherSkill" class="ms-md-5 mt-3 h-25"  style="display: none" >
-                    <ul class="row list-unstyled fs-5 col-12 col-lg-5"  >
+                    <ul class="row list-unstyled fs-5 col-12 col-lg-8"  >
                         <li class="col-12"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>  Time management</li>
                         <li class="col-12"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>  Communication</li>
                         <li class="col-12"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>  Adaptability</li>

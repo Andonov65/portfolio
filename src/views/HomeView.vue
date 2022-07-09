@@ -5,19 +5,25 @@
 
       <div class="row">
         <general-info/>
-        <hr/>
-        <div class="col-12 col-lg-5">
+
+        <div class="col-12 col-lg-6">
+          <hr/>
           <education/>
           <hr/>
           <experience/>
           <hr/>
           <skills/>
+        </div>
+        <div class="col-12 col-lg-6">
+          <hr/>
+          <overall-rating/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
           <hr/>
           <activities/>
           <hr/>
-        </div>
-        <div class="col-12 col-lg-5">
-          <overall-rating/>
         </div>
 
       </div>

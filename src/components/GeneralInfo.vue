@@ -3,7 +3,7 @@
         <div class="row">
 
             <div class="col-md-5 col-xs-12 m-2 d-flex flex-column align-items-center">
-                <img class="rounded-3 mb-1 col-7 img-fluid"
+                <img class="rounded-3 mb-1 col-5 img-fluid"
                      src="../assets/img/marko-andonov-slika.jpg"
                      alt="marko-andonov-image">
                 <h4 >Marko Andonov</h4>

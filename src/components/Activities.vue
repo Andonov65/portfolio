@@ -5,9 +5,9 @@
                 <div class="row ">
                     <div class="d-flex">
                         <span>
-                            <i @click="myFunction" class="fa fa-chevron-circle-down fa-2x btn btn-outline-dark me-2 mt-3" aria-hidden="true"></i>
+                            <i @click="myFunction" class="fa fa-chevron-circle-down btn btn-outline-dark me-2 mt-1" aria-hidden="true"></i>
                         </span>
-                        <h2><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i>  Activities</h2>
+                        <h2><i class="fa fa-bar-chart" aria-hidden="true"></i>  Activities</h2>
                     </div>
                 </div>
 
