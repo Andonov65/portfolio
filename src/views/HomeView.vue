@@ -16,7 +16,7 @@
           <activities/>
           <hr/>
         </div>
-        <div class="col top-50">
+        <div class="col">
           <overall-rating/>
         </div>
 
