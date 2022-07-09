@@ -4,10 +4,10 @@
         <div class="col ms-md-5">
             <div class="row ">
                 <div class="d-flex">
-                    <h2><i class="fa fa-suitcase fa-2x" aria-hidden="true"></i>  Experience</h2>
                     <span>
-                        <i @click="myFunction" class="fa fa-chevron-circle-down fa-2x btn btn-outline-dark ms-2 mt-3" aria-hidden="true"></i>
+                        <i @click="myFunction" class="fa fa-chevron-circle-down fa-2x btn btn-outline-dark me-2 mt-3" aria-hidden="true"></i>
                     </span>
+                    <h2><i class="fa fa-suitcase fa-2x" aria-hidden="true"></i>  Experience</h2>
                 </div>
             </div>
 

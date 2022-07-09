@@ -6,7 +6,7 @@
       <div class="row">
         <general-info/>
         <hr/>
-        <div class="col">
+        <div class="col-12 col-lg-5">
           <education/>
           <hr/>
           <experience/>
@@ -16,7 +16,7 @@
           <activities/>
           <hr/>
         </div>
-        <div class="col">
+        <div class="col-12 col-lg-5">
           <overall-rating/>
         </div>
 
