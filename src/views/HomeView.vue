@@ -118,22 +118,22 @@ export default {
           return '<i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
         }
         return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
-      }else if(parseFloat((this.likes/this.clicksCounter)*100)<=40 && parseFloat((this.likes/this.clicksCounter)*100)>20){
+      }else if(parseFloat((this.likes/this.clicksCounter)*100)>20 && parseFloat((this.likes/this.clicksCounter)*100)<=40){
         if(parseFloat((this.likes/this.clicksCounter)*100)<=30){
           return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
         }
         return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
-      }else if(parseFloat((this.likes/this.clicksCounter)*100)<=60 && parseFloat((this.likes/this.clicksCounter)*100)>40){
+      }else if(parseFloat((this.likes/this.clicksCounter)*100)>40 && parseFloat((this.likes/this.clicksCounter)*100)<=60){
         if(parseFloat((this.likes/this.clicksCounter)*100)<=50){
           return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
         }
         return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
-      }else if(parseFloat((this.likes/this.clicksCounter)*100)<=80 && parseFloat((this.likes/this.clicksCounter)*100)>60){
+      }else if(parseFloat((this.likes/this.clicksCounter)*100)>60 && parseFloat((this.likes/this.clicksCounter)*100)<=80){
         if(parseFloat((this.likes/this.clicksCounter)*100)<=70){
           return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
         }
         return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
-      }else if(parseFloat((this.likes/this.clicksCounter)*100)<=100 && parseFloat((this.likes/this.clicksCounter)*100)>80){
+      }else if(parseFloat((this.likes/this.clicksCounter)*100)>80 && parseFloat((this.likes/this.clicksCounter)*100)<=100){
         if(parseFloat((this.likes/this.clicksCounter)*100)===100){
           return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i>';
         }
