@@ -7,7 +7,7 @@
                      src="../assets/img/marko-andonov-slika.jpg"
                      alt="marko-andonov-image">
                 <h4 >Marko Andonov</h4>
-                <h6 class="w-50 text-center" >Software engineer and web developer</h6>
+                <h6 class="w-50 text-center" >Full-Stack Developer</h6>
 
             </div>
 

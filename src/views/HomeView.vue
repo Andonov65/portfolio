@@ -1,5 +1,5 @@
 <template>
-  <main style="overflow-x: hidden" class="bg-secondary bg-opacity-25 w-100 h-100">
+  <main style="overflow-x: hidden" class="bg-info bg-gradient bg-opacity-50 w-100 h-100">
     <div class="container pt-4">
 
 
@@ -54,8 +54,12 @@
         </div>
         <div class="row d-flex justify-content-center">
           <div class="text-white p-4 col-10 col-md-6 col-lg-4 text-center bg-black" >{{showAverageFromLikesAndDislikes}} people like this CV.</div>
+
         </div>
-       </div>
+        <div class="row d-flex justify-content-center">
+          <div class="p-4 col-10 col-md-6 col-lg-4 text-center" v-html="showStarsFromLikesAndDislikes"></div>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -77,7 +81,8 @@ export default {
   data(){
     return{
       likes: 0,
-      clicksCounter: 0
+      clicksCounter: 0,
+      dislikes: 0
     }
   },
   methods: {
@@ -87,6 +92,7 @@ export default {
     },
     dislikesClicks(){
       this.clicksCounter++;
+      this.dislikes++;
     },
     showRateForm(){
       let buttonRate = document.getElementById("buttonRate");
@@ -103,6 +109,44 @@ export default {
       }
 
       return parseFloat((this.likes/this.clicksCounter)*100).toFixed(0)+"%";
+    },
+    showStarsFromLikesAndDislikes(){
+      if(parseFloat((this.likes/this.clicksCounter)*100)===0 || isNaN(parseFloat((this.likes/this.clicksCounter)*100))){
+        return '<i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
+      }else if(parseFloat((this.likes/this.clicksCounter)*100)<=20){
+        if(parseFloat((this.likes/this.clicksCounter)*100)<=10){
+          return '<i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
+        }
+        return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
+      }else if(parseFloat((this.likes/this.clicksCounter)*100)<=40 && parseFloat((this.likes/this.clicksCounter)*100)>20){
+        if(parseFloat((this.likes/this.clicksCounter)*100)<=30){
+          return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
+        }
+        return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
+      }else if(parseFloat((this.likes/this.clicksCounter)*100)<=60 && parseFloat((this.likes/this.clicksCounter)*100)>40){
+        if(parseFloat((this.likes/this.clicksCounter)*100)<=50){
+          return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
+        }
+        return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
+      }else if(parseFloat((this.likes/this.clicksCounter)*100)<=80 && parseFloat((this.likes/this.clicksCounter)*100)>60){
+        if(parseFloat((this.likes/this.clicksCounter)*100)<=70){
+          return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
+        }
+        return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>';
+      }else if(parseFloat((this.likes/this.clicksCounter)*100)<=100 && parseFloat((this.likes/this.clicksCounter)*100)>80){
+        if(parseFloat((this.likes/this.clicksCounter)*100)===100){
+          return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i>';
+        }
+        return '<i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>';
+      }
+    }
+  },
+  watch: {
+    likes(){
+        console.log("Like clicked, number of likes: " + this.likes);
+    },
+    dislikes(){
+        console.log("Dislike clicked, number of dislikes: " + (this.dislikes));
     }
   }
 }
