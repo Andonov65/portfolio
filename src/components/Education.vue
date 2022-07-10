@@ -13,7 +13,7 @@
                 </div>
 
                 <div class="ms-md-5 mt-3 p-3 bg-success bg-opacity-50 rounded-3" :class="{'d-none' : !show}">
-                    <p  class="font-small">
+                    <p class="font-small">
                         <i class="fa fa-circle" aria-hidden="true"></i> <b>2019 - </b>in progress | Faculty of Computer
                         Science and Engineering on UKIM - Skopje
                     </p>

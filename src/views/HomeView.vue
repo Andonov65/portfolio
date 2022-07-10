@@ -41,7 +41,9 @@
 
             <div class="row">
                 <div class="d-flex flex-row justify-content-center mt-4 mb-4">
-                    <button @click="show = !show" class="btn btn-outline-dark fa-2x" :class="{'d-none' : show}">Rate this CV</button>
+                    <button @click="show = !show" class="btn btn-outline-dark fa-2x" :class="{'d-none' : show}">Rate
+                        this CV
+                    </button>
                 </div>
 
             </div>
