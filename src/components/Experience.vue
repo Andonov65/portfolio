@@ -3,20 +3,20 @@
     <div class="row ms-md-5">
         <div class="col ms-md-5">
             <div class="row ">
-                <div class="d-flex">
+                <div class="d-flex align-items-center">
                     <span>
-                        <i @click="myFunction" class="fa fa-chevron-circle-down btn btn-outline-dark me-2 mt-1" aria-hidden="true"></i>
+                        <i @click="show = !show" class="fa fa-chevron-circle-down btn btn-outline-dark me-2" aria-hidden="true"></i>
                     </span>
-                    <h2><i class="fa fa-suitcase" aria-hidden="true"></i>  Experience</h2>
+                    <h3><i class="fa fa-suitcase" aria-hidden="true"></i>  Experience</h3>
                 </div>
             </div>
 
 
-            <div id="hideDivExp" class="ms-md-5 mt-3  p-3 bg-light bg-opacity-25 rounded-3"  style="display: none">
-                <p >
+            <div class="ms-md-5 mt-3 p-3 bg-light bg-opacity-25 rounded-3" :class="{'d-none' : !show}" >
+                <p  class="font-small">
                     <i class="fa fa-circle" aria-hidden="true"></i>  <b>IT support</b> - Local Elections | 17 and 31 October 2021
                 </p>
-                <p>
+                <p  class="font-small">
                     <i class="fa fa-circle" aria-hidden="true"></i>  <b>Student coordinator</b> - Code Academy | July - September 2021
                 </p>
             </div>
@@ -31,15 +31,9 @@
 <script>
     export default {
         name: "Experience",
-        methods:{
-            myFunction() {
-                let x = document.getElementById("hideDivExp");
-
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
+        data(){
+            return{
+                show: false
             }
         }
     }
